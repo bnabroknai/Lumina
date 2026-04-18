@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0A0A1F;
+  color: #fff;
+  overscroll-behavior: none; /* Prevent bounce scroll on mobile */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for Chat panel */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* iOS Safe Areas */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}

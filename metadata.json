@@ -1,0 +1,8 @@
+{
+  "name": "Lumina Companion",
+  "description": "An immersive mobile-first AI companion featuring a 3D reactive avatar and interactive voice conversation.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}
